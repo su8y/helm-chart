@@ -1,0 +1,44 @@
+
+# This will set the replicaset count more information can be found here: https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/
+replicaCount: 1
+app:
+  replicas: 1
+  port: 8080
+  customCommand: []
+  customArgs: []
+  env: []
+  resources: 
+    requests:
+      cpu: 500m
+      memory: 256Mi
+    limits:
+      cpu: 500m
+      memory: 256Mi
+
+imagePullSecrets: 
+  - name: v3
+image:
+  registry: 192.168.3.182:5000
+  repository: cc-test
+  # This sets the pull policy for images.
+  tag: ""
+  pullPolicy: IfNotPresent
+
+service:
+  enabled: true
+  port: 80
+  type: ClusterIP
+
+
+ingress: 
+  enabled: true
+  className: nginx
+  pathType: Prefix
+    
+
+podAnnotations: {}
+podLabels: {}
+
+probes:
+  readiness: {}
+  liveness: {}
