@@ -3,7 +3,7 @@ entries:
   spring-app:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-01-15T16:10:44.661505732+09:00"
+    created: "2025-01-15T16:18:55.687871596+09:00"
     description: Spring application server
     digest: c690c9333fa346bede9f27dfdc4ccf17dd614580441688359ddce7e9e763d306
     home: https://chart.beerone.com
@@ -13,6 +13,6 @@ entries:
       name: su8y
     name: spring-app
     urls:
-    - 192.168.3.182/gitlab/spring-app-0.1.0.tgz
+    - http://192.168.3.182/gitlab/asdf/charts/spring-app-0.1.0.tgz
     version: 0.1.0
-generated: "2025-01-15T16:10:44.658999355+09:00"
+generated: "2025-01-15T16:18:55.685881143+09:00"
