@@ -1,9 +1,9 @@
 apiVersion: v2
-name: spring-app
+name: chart
 version: 0.1.0
 appVersion: 0.1.0
 kubeVersion: ">= 1.32.0"
-description: "Spring application server"
+description: "application server"
 home: https://chart.beerone.com
 maintainers:
   - name: su8y

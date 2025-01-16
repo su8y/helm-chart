@@ -33,7 +33,7 @@ service:
 ingress: 
   enabled: true
   className: nginx
-  pathType: Prefix
+  pathType: ImplementationSpecific
     
 
 podAnnotations: {}
